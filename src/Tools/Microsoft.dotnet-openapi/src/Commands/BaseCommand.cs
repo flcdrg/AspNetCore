@@ -161,7 +161,7 @@ namespace Microsoft.DotNet.OpenApi.Commands
                 metadata[SourceUrlAttrName] = sourceUrl;
             }
 
-            if(codeGenerator != null)
+            if (codeGenerator != null)
             {
                 metadata[CodeGeneratorAttrName] = codeGenerator.ToString();
             }
@@ -358,7 +358,7 @@ namespace Microsoft.DotNet.OpenApi.Commands
             var destinationExists = File.Exists(destinationPath);
             if (destinationExists && !overwrite)
             {
-                throw new ArgumentException($"File '{destinationPath}' already exists. Aborting to avoid conflicts.");
+                throw new ArgumentException($"File '{destinationPath}' already exists. Aborting to avoid conflicts. Provide the '--output-file' argument with an unused file to resolve.");
             }
 
             await Out.WriteLineAsync($"Downloading to '{destinationPath}'.");
