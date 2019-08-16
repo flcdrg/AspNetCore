@@ -55,7 +55,7 @@ namespace Microsoft.DotNet.OpenApi.Commands
                 // We have to download the file from that URL, save it to a local file, then create a OpenApiReference
                 await DownloadToFileAsync(sourceFile, destination, overwrite: false);
 
-                AddServiceReference(OpenApiReference, projectFilePath, outputFile, codeGenerator, sourceFile);
+                AddOpenAPIReference(OpenApiReference, projectFilePath, outputFile, codeGenerator, sourceFile);
             }
             else
             {

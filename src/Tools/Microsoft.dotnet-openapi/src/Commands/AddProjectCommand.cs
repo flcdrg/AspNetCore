@@ -35,7 +35,7 @@ namespace Microsoft.DotNet.OpenApi.Commands
             {
                 await EnsurePackagesInProjectAsync(projectFilePath, codeGenerator);
 
-                AddServiceReference(OpenApiProjectReference, projectFilePath, sourceFile, codeGenerator);
+                AddOpenAPIReference(OpenApiProjectReference, projectFilePath, sourceFile, codeGenerator);
             }
 
             return 0;

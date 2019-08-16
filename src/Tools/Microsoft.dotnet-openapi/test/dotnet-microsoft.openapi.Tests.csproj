@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <AssemblyName>Microsoft.DotNet.Open.Api.Tools.Tests</AssemblyName>
     <DefaultItemExcludes>$(DefaultItemExcludes);TestProjects\**\*</DefaultItemExcludes>
-    <TestGroupName>DotNetAddServiceReferenceToolsTests</TestGroupName>
+    <TestGroupName>DotNetAddOpenAPIReferenceToolsTests</TestGroupName>
   </PropertyGroup>
 
   <PropertyGroup>

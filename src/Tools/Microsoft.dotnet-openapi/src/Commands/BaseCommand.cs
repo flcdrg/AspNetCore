@@ -128,7 +128,7 @@ namespace Microsoft.DotNet.OpenApi.Commands
             return Uri.TryCreate(file, UriKind.Absolute, out var _) && file.StartsWith("http");
         }
 
-        internal void AddServiceReference(
+        internal void AddOpenAPIReference(
             string tagName,
             FileInfo projectFile,
             string sourceFile,
